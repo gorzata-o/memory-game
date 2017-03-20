@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+.gameboard {
+	width: 450px;
+	background-color: #dcdfe6;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.card {
+	width: 90px;
+	height: 120px;
+	margin: 5px;
+	border-radius: 6px;
+	position: relative;
+	border: 2px solid #536283;
+	perspective: 400px;
+}
+
+.card::before,
+.card::after {
+	content:'';
+	width: 100%;
+	height: 100%;
+	background: #dcdfe6;
+	background-color: white;
+	position: absolute;
+	border-radius: 6px;
+	box-sizing: border-box;
+	border: 2px solid #536283;
+	transition: 0.6s transform linear;
+	backface-visibility: hidden;
+}
+
+.card::after {
+	background-image: repeating-linear-gradient(
+	45deg,
+	#293141,
+	#293141 5px,
+	#97a0b4 5px,
+	#97a0b4 10px
+	);
+}
+
+.card:hover::after {
+	transform: rotateY(180deg);
+}
+
+.card::before {
+	background: url(../images/bla.png);
+	background-size: contain;
+	transform: rotateY(180deg);
+}
+
+.card:hover::before {
+	transform: rotateY(360deg);
+}
+
+.chosen {
+	background: url(../images/bla.png);
+	background-size: contain;
+}
+
+.chosen::after {
+	background: transparent;
+	border: none;
+}
+
+.chosen::before {
+	background: transparent;
+	border: none;
+}
