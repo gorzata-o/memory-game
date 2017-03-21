@@ -52,7 +52,7 @@
 }
 
 .card::before {
-	background: url(../images/bla.png);
+	/*background: url(../images/bla.png);*/
 	background-size: contain;
 	transform: rotateY(180deg);
 }
@@ -62,7 +62,7 @@
 }
 
 .chosen {
-	background: url(../images/bla.png);
+	/*background: url(../images/bla.png);*/
 	background-size: contain;
 }
 
@@ -74,4 +74,44 @@
 .chosen::before {
 	background: transparent;
 	border: none;
+}
+
+.one {
+	background: url(../images/one.jpg);
+	background-size: contain;
+}
+
+.two {
+	background: url(../images/two.jpg);
+	background-size: contain;
+}
+
+.three {
+	background: url(../images/three.jpg);
+	background-size: contain;
+}
+
+.four {
+	background: url(../images/four.jpg);
+	background-size: contain;
+}
+
+.five {
+	background: url(../images/five.jpg);
+	background-size: contain;
+}
+
+.six {
+	background: url(../images/six.jpg);
+	background-size: contain;
+}
+
+.seven {
+	background: url(../images/seven.jpg);
+	background-size: contain;
+}
+
+.eight {
+	background: url(../images/eight.jpg);
+	background-size: contain;
 }
